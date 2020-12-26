@@ -1,0 +1,123 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
+## Code Book
+ Description of the Data sets
+ 
+**Original Datasets**
+ Original data source:
+ - https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+ 
+1) Activity Varible  consists of data from "Y_train.txt" and "Y_test.txt"
+2) Subject Varible consist of data from "subject_train.txt" and subject_test.txt"
+3)  Features Varibles consist of data from "X_train.txt" and "X_test.txt"
+4) Features  Varibles names from "features.txt"
+5) levels of Varible Activity come from "activity_labels.txt"
+
+
+
+## Transformations of the Dataset
+
+1. Merging the training and the test sets to create one data set and arranging the data set
+- myData.R
+
+2. Extracting only the measurements on the mean and standard deviation for each measurement
+
+3. Using descriptive activity names to name the activities in the data     set
+
+4. Labeling the data set with descriptive variable names
+
+5. Creating and independent data set with the averages of each variable for each subject and activity
+
+- tidyData.R
+
+## Description of Variables in Data set
+
+*Subject*
+Number 1:30 which represents a group of 30 individual participants
+
+*Activity*
+A factor of levels 1:6; where
+    
+    1. WALKING
+    2. WALKING_UPSTAIRS
+    3. WALKING_DOWNSTAIRS
+    4. SITTING
+    5. STANDING
+    6. LAYING
+    
+*Measurements*
+These are the measuremnt variables which have either time or frequency as units of measurement and have been aggregated either on mean or standard deviation. XYZ are the 3-axial positions.
+
+ [1] "timeBodyAccelerometer-mean()-X"                
+ [2] "timeBodyAccelerometer-mean()-Y"                
+ [3] "timeBodyAccelerometer-mean()-Z"                
+ [4] "timeBodyAccelerometer-std()-X"                 
+ [5] "timeBodyAccelerometer-std()-Y"                 
+ [6] "timeBodyAccelerometer-std()-Z"                 
+ [7] "timeGravityAccelerometer-mean()-X"             
+ [8] "timeGravityAccelerometer-mean()-Y"             
+ [9] "timeGravityAccelerometer-mean()-Z"             
+[10] "timeGravityAccelerometer-std()-X"              
+[11] "timeGravityAccelerometer-std()-Y"              
+[12] "timeGravityAccelerometer-std()-Z"              
+[13] "timeBodyAccelerometerJerk-mean()-X"            
+[14] "timeBodyAccelerometerJerk-mean()-Y"            
+[15] "timeBodyAccelerometerJerk-mean()-Z"            
+[16] "timeBodyAccelerometerJerk-std()-X"             
+[17] "timeBodyAccelerometerJerk-std()-Y"             
+[18] "timeBodyAccelerometerJerk-std()-Z"             
+[19] "timeBodyGyroscope-mean()-X"                    
+[20] "timeBodyGyroscope-mean()-Y"                    
+[21] "timeBodyGyroscope-mean()-Z"                    
+[22] "timeBodyGyroscope-std()-X"                     
+[23] "timeBodyGyroscope-std()-Y"                     
+[24] "timeBodyGyroscope-std()-Z"                     
+[25] "timeBodyGyroscopeJerk-mean()-X"                
+[26] "timeBodyGyroscopeJerk-mean()-Y"                
+[27] "timeBodyGyroscopeJerk-mean()-Z"                
+[28] "timeBodyGyroscopeJerk-std()-X"                 
+[29] "timeBodyGyroscopeJerk-std()-Y"                 
+[30] "timeBodyGyroscopeJerk-std()-Z"                 
+[31] "timeBodyAccelerometerMagnitude-mean()"         
+[32] "timeBodyAccelerometerMagnitude-std()"          
+[33] "timeGravityAccelerometerMagnitude-mean()"      
+[34] "timeGravityAccelerometerMagnitude-std()"       
+[35] "timeBodyAccelerometerJerkMagnitude-mean()"     
+[36] "timeBodyAccelerometerJerkMagnitude-std()"      
+[37] "timeBodyGyroscopeMagnitude-mean()"             
+[38] "timeBodyGyroscopeMagnitude-std()"              
+[39] "timeBodyGyroscopeJerkMagnitude-mean()"         
+[40] "timeBodyGyroscopeJerkMagnitude-std()"          
+[41] "frequencyBodyAccelerometer-mean()-X"           
+[42] "frequencyBodyAccelerometer-mean()-Y"           
+[43] "frequencyBodyAccelerometer-mean()-Z"           
+[44] "frequencyBodyAccelerometer-std()-X"            
+[45] "frequencyBodyAccelerometer-std()-Y"            
+[46] "frequencyBodyAccelerometer-std()-Z"            
+[47] "frequencyBodyAccelerometerJerk-mean()-X"       
+[48] "frequencyBodyAccelerometerJerk-mean()-Y"       
+[49] "frequencyBodyAccelerometerJerk-mean()-Z"       
+[50] "frequencyBodyAccelerometerJerk-std()-X"        
+[51] "frequencyBodyAccelerometerJerk-std()-Y"        
+[52] "frequencyBodyAccelerometerJerk-std()-Z"        
+[53] "frequencyBodyGyroscope-mean()-X"               
+[54] "frequencyBodyGyroscope-mean()-Y"               
+[55] "frequencyBodyGyroscope-mean()-Z"               
+[56] "frequencyBodyGyroscope-std()-X"                
+[57] "frequencyBodyGyroscope-std()-Y"                
+[58] "frequencyBodyGyroscope-std()-Z"                
+[59] "frequencyBodyAccelerometerMagnitude-mean()"    
+[60] "frequencyBodyAccelerometerMagnitude-std()"     
+[61] "frequencyBodyAccelerometerJerkMagnitude-mean()"
+[62] "frequencyBodyAccelerometerJerkMagnitude-std()" 
+[63] "frequencyBodyGyroscopeMagnitude-mean()"        
+[64] "frequencyBodyGyroscopeMagnitude-std()"         
+[65] "frequencyBodyGyroscopeJerkMagnitude-mean()"    
+[66] "frequencyBodyGyroscopeJerkMagnitude-std()"     
+
+
+
