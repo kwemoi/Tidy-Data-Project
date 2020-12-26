@@ -22,7 +22,7 @@ output:
 ## Transformations of the Dataset
 
 1. Merging the training and the test sets to create one data set and arranging the data set
-- myData.R
+- myData.txt
 
 2. Extracting only the measurements on the mean and standard deviation for each measurement
 
@@ -32,7 +32,7 @@ output:
 
 5. Creating and independent data set with the averages of each variable for each subject and activity
 
-- tidyData.R
+- tidyData.txt
 
 ## Description of Variables in Data set
 
