@@ -119,5 +119,6 @@ These are the measuremnt variables which have either time or frequency as units 
 [65] "frequencyBodyGyroscopeJerkMagnitude-mean()"    
 [66] "frequencyBodyGyroscopeJerkMagnitude-std()"     
 
-
+## Summaries
+The tidyData has been aggregated on average for each subject and each activity across all variables.
 
